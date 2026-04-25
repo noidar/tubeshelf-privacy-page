@@ -1,3 +1,158 @@
+/* --- Tubeshelf custom classes for layout and branding --- */
+
+.hero {
+  background: linear-gradient(90deg, #1a73e8 0%, #4285f4 100%);
+  color: #fff;
+  padding: 2.5rem 0 2rem 0;
+  box-shadow: 0 2px 8px rgba(26,115,232,0.08);
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.brand-dot {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 4px #4285f433;
+  margin-right: 0.2em;
+}
+.brand-name {
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+.lead {
+  font-size: 1.18rem;
+  color: #e3eafc;
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 0.7em 1.5em;
+  font-size: 1.08em;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgba(26,115,232,0.08);
+}
+.btn.primary {
+  background: #fff;
+  color: #1a73e8;
+  border: 2px solid #fff;
+}
+.btn.primary:hover {
+  background: #e3eafc;
+  color: #174ea6;
+}
+.btn.ghost {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn.ghost:hover {
+  background: #174ea6;
+  color: #fff;
+}
+.cta-note {
+  color: #c7d6f7;
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+
+.features {
+  margin: 2.5rem 0 2rem 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.feature {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(60,64,67,0.07);
+  padding: 1.3rem 1.2rem 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 180px;
+}
+
+.privacy-policy {
+  margin: 2.5rem 0 2rem 0;
+  background: #f8fafc;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(60,64,67,0.06);
+  padding: 2.2rem 1.5rem;
+}
+.privacy-policy h2, .privacy-policy h3 {
+  color: #174ea6;
+}
+.privacy-policy .muted {
+  color: #6b7280;
+  font-size: 0.98rem;
+  margin-bottom: 1.2rem;
+}
+.privacy-policy table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.98rem;
+}
+.privacy-policy th, .privacy-policy td {
+  border: 1px solid #e3eafc;
+  padding: 0.5em 0.7em;
+  text-align: left;
+}
+.privacy-policy th {
+  background: #e3eafc;
+  color: #174ea6;
+}
+.privacy-policy tr:nth-child(even) td {
+  background: #f5f7fa;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  .privacy-policy {
+    padding: 1.2rem 0.3rem;
+  }
+  .features {
+    margin: 1.5rem 0 1rem 0;
+  }
+}
 
 /*
  * tubeshelf-privacy-page CSS
